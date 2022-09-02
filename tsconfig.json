@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es2018",                                  
+    "lib": ["es5", "es5", "ES2018" ],                    
+    "experimentalDecorators": true,                     
+    "emitDecoratorMetadata": true,                      
+    "module": "commonjs",                                
+    "rootDir": "./src",                                
+    "moduleResolution": "node",               
+    "allowJs": true,                        
+    "outDir": "./dist",                         
+    "esModuleInterop": true,                           
+    "forceConsistentCasingInFileNames": true,           
+    "strict": true,                                 
+    "noImplicitAny": true,                          
+    "strictPropertyInitialization": false,          
+    "skipLibCheck": true                             
+ },
+ "include": ["src/**/*"],
+ "exclude": ["node_modules", "dist"],
+ "ts-node": {
+  "files": true
+ }
+}
+
