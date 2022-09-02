@@ -19,7 +19,7 @@ export class UserController {
         const newUser = userRepository.create({
             name,
             email,
-            password:hashPassword
+            password:hashPassword,
         })
 
         await userRepository.save(newUser)
