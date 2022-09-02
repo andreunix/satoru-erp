@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  pgsql:
+  PG:
     image: postgres:alpine
     ports:
       - '5432:5432'
@@ -12,12 +12,6 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-
-  adminer:
-    image: adminer
-    restart: always
-    ports:
-      - '8080:8080'
 
 volumes:
   pg-data:
